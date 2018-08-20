@@ -1,0 +1,42 @@
+[
+    { 
+        "stat": "utility_v",
+        "search": "Utility Voltage",
+        "help": "# HELP The line in voltage delivered to the UPS",
+        "type": "# TYPE ups_voltage_utility gauge",
+        "metric": "ups_voltage_utility",
+        "end": "35"
+    },
+    { 
+        "stat": "output_v",
+        "search": "Output Voltage",
+        "help": "# HELP The line out voltage delivered by the UPS",
+        "type": "# TYPE ups_voltage_output gauge",
+        "metric": "ups_voltage_output",
+        "end": "35"
+    },
+    {
+        "stat": "battery",
+        "search": "Battery Capacity",
+        "help": "# HELP The current battery capacity remaining in %",
+        "type": "# TYPE ups_battery_capacity gauge",
+        "metric": "ups_battery_capacity",
+        "end": "35"
+    },
+    {
+        "stat": "runtime",
+        "search": "Remaining Runtime",
+        "help": "# HELP The current battery capacity remaining in min",
+        "type": "# TYPE ups_battery_runtime gauge",
+        "metric": "ups_battery_runtime",
+        "end": "35"
+    },
+    { 
+        "stat": "load",
+        "search": "Load",
+        "help": "# HELP The current load on the UPS in watts",
+        "type": "# TYPE ups_load gauge",
+        "metric": "ups_load",
+        "end": "35"
+    }
+]

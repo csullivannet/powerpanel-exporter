@@ -1,0 +1,82 @@
+[
+    { 
+        "stat": "state",
+        "search": "State",
+        "help": "# HELP The current state of the UPS",
+        "type": "# TYPE ups_current_state untyped",
+        "metric": "ups_current_state",
+        "end": ""
+    },
+    { 
+        "stat": "power_supply",
+        "search": "Power Supply by",
+        "help": "# HELP Where the UPS is currently drawing power from",
+        "type": "# TYPE ups_power_supply untyped",
+        "metric": "ups_power_supply",
+        "end": ""
+    },
+    { 
+        "stat": "utility_v",
+        "search": "Utility Voltage",
+        "help": "# HELP The line in voltage delivered to the UPS",
+        "type": "# TYPE ups_voltage_utility gauge",
+        "metric": "ups_voltage_utility",
+        "end": "35"
+    },
+    { 
+        "stat": "output_v",
+        "search": "Output Voltage",
+        "help": "# HELP The line out voltage delivered by the UPS",
+        "type": "# TYPE ups_voltage_output gauge",
+        "metric": "ups_voltage_output",
+        "end": "35"
+    },
+    { 
+        "stat": "battery",
+        "search": "Battery Capacity",
+        "help": "# HELP The current battery capacity remaining in %",
+        "type": "# TYPE ups_battery_capacity gauge",
+        "metric": "ups_battery_capacity",
+        "end": "35"
+    },
+    { 
+        "stat": "runtime",
+        "search": "Remaining Runtime",
+        "help": "# HELP The current battery capacity remaining in min",
+        "type": "# TYPE ups_battery_runtime gauge",
+        "metric": "ups_battery_runtime",
+        "end": "35"
+    },
+    { 
+        "stat": "load",
+        "search": "Load",
+        "help": "# HELP The current load on the UPS in watts",
+        "type": "# TYPE ups_load gauge",
+        "metric": "ups_load",
+        "end": "35"
+    },
+    { 
+        "stat": "line",
+        "search": "Line Interaction",
+        "help": "# HELP The line interaction (?)",
+        "type": "# TYPE ups_line untyped",
+        "metric": "ups_line",
+        "end": ""
+    },
+    { 
+        "stat": "test",
+        "search": "Test Result",
+        "help": "# HELP The result and time of the last UPS test",
+        "type": "# TYPE ups_test_result untyped",
+        "metric": "ups_test_result",
+        "end": ""
+    },
+    { 
+        "stat": "power_event",
+        "search": "Last Power Event",
+        "help": "# HELP The time the last power event occurred",
+        "type": "# TYPE ups_event untyped",
+        "metric": "ups_event",
+        "end": ""
+    }
+]
